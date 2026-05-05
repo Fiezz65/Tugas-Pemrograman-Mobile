@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Page1Fragment">
+
+    <fragment
+        android:id="@+id/Page1Fragment"
+        android:name="com.example.navigationhost.PageFragment"
+        android:label="Halaman 1"
+        tools:layout="@layout/fragment_1">
+
+        <argument android:name="layoutResId" app:argType="reference" android:defaultValue="@layout/fragment_1" />
+        <argument android:name="btnId"       app:argType="reference" android:defaultValue="@id/btn" />
+        <argument android:name="btnAction"   app:argType="reference" android:defaultValue="@id/action_page1_to_page2" />
+
+        <action android:id="@+id/action_page1_to_page2" app:destination="@id/Page2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Page2Fragment"
+        android:name="com.example.navigationhost.PageFragment"
+        android:label="Halaman 2"
+        tools:layout="@layout/fragment_2">
+
+        <argument android:name="layoutResId" app:argType="reference" android:defaultValue="@layout/fragment_2" />
+        <argument android:name="btnId"       app:argType="reference" android:defaultValue="@id/btn" />
+        <argument android:name="btnAction"   app:argType="reference" android:defaultValue="@id/action_page2_to_page3" />
+
+        <action android:id="@+id/action_page2_to_page3" app:destination="@id/Page3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Page3Fragment"
+        android:name="com.example.navigationhost.PageFragment"
+        android:label="Halaman 3"
+        tools:layout="@layout/fragment_3">
+
+        <argument android:name="layoutResId" app:argType="reference" android:defaultValue="@layout/fragment_3" />
+        <argument android:name="btnId"       app:argType="reference" android:defaultValue="@id/btn" />
+        <argument android:name="btnAction"   app:argType="reference" android:defaultValue="@id/action_page3_to_page4" />
+
+        <action android:id="@+id/action_page3_to_page4" app:destination="@id/Page4Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Page4Fragment"
+        android:name="com.example.navigationhost.PageFragment"
+        android:label="Halaman 4"
+        tools:layout="@layout/fragment_4">
+
+        <argument android:name="layoutResId" app:argType="reference" android:defaultValue="@layout/fragment_4" />
+        <argument android:name="btnId"       app:argType="reference" android:defaultValue="@id/btn" />
+        <argument android:name="btnAction"   app:argType="reference" android:defaultValue="@id/action_page4_to_page5" />
+
+        <action android:id="@+id/action_page4_to_page5" app:destination="@id/Page5Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Page5Fragment"
+        android:name="com.example.navigationhost.PageFragment"
+        android:label="Halaman 5"
+        tools:layout="@layout/fragment_5">
+
+        <argument android:name="layoutResId" app:argType="reference" android:defaultValue="@layout/fragment_5" />
+        <argument android:name="btnId"       app:argType="reference" android:defaultValue="@id/btn" />
+        <argument android:name="btnAction"   app:argType="reference" android:defaultValue="@id/action_page5_to_page6" />
+
+        <action android:id="@+id/action_page5_to_page6" app:destination="@id/Page6Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Page6Fragment"
+        android:name="com.example.navigationhost.PageFragment"
+        android:label="Halaman 6"
+        tools:layout="@layout/fragment_6">
+
+        <argument android:name="layoutResId" app:argType="reference" android:defaultValue="@layout/fragment_6" />
+        <argument android:name="btnId"       app:argType="reference" android:defaultValue="@id/btn" />
+        <argument android:name="btnAction"   app:argType="reference" android:defaultValue="@id/action_page6_to_page7" />
+
+        <action android:id="@+id/action_page6_to_page7" app:destination="@id/Page7Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Page7Fragment"
+        android:name="com.example.navigationhost.PageFragment"
+        android:label="Halaman 7"
+        tools:layout="@layout/fragment_7">
+
+        <argument android:name="layoutResId" app:argType="reference" android:defaultValue="@layout/fragment_7" />
+        <argument android:name="btnId"       app:argType="reference" android:defaultValue="@id/btn" />
+        <argument android:name="btnAction"   app:argType="reference" android:defaultValue="@id/action_page7_to_page8" />
+
+        <action android:id="@+id/action_page7_to_page8" app:destination="@id/Page8Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Page8Fragment"
+        android:name="com.example.navigationhost.PageFragment"
+        android:label="Halaman 8"
+        tools:layout="@layout/fragment_8">
+
+        <argument android:name="layoutResId" app:argType="reference" android:defaultValue="@layout/fragment_8" />
+        <argument android:name="btnId"       app:argType="reference" android:defaultValue="@id/btn" />
+        <argument android:name="btnAction"   app:argType="reference" android:defaultValue="@id/action_page8_to_page9" />
+
+        <action android:id="@+id/action_page8_to_page9" app:destination="@id/Page9Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Page9Fragment"
+        android:name="com.example.navigationhost.PageFragment"
+        android:label="Halaman 9"
+        tools:layout="@layout/fragment_9">
+
+        <argument android:name="layoutResId" app:argType="reference" android:defaultValue="@layout/fragment_9" />
+        <argument android:name="btnId"       app:argType="reference" android:defaultValue="@id/btn" />
+        <argument android:name="btnAction"   app:argType="reference" android:defaultValue="@id/action_page9_to_page10" />
+
+        <action android:id="@+id/action_page9_to_page10" app:destination="@id/Page10Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Page10Fragment"
+        android:name="com.example.navigationhost.PageFragment"
+        android:label="Halaman 10"
+        tools:layout="@layout/fragment_10">
+
+        <argument android:name="layoutResId" app:argType="reference" android:defaultValue="@layout/fragment_10" />
+        <argument android:name="btnId"       app:argType="reference" android:defaultValue="@id/btn" />
+        <argument android:name="btnAction"   app:argType="reference" android:defaultValue="@id/action_page10_to_page1" />
+
+        <action
+            android:id="@+id/action_page10_to_page1"
+            app:destination="@id/Page1Fragment"
+            app:popUpTo="@id/Page1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
